@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.erp.booking.Bill_Details">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_header" >
+
+            <RelativeLayout
+                android:id="@+id/child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Gross Amount"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Bill Amount"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="GST No."
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="CGST"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="SGST"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="IGST"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="CESS"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="Bill"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,420 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.erp.booking.RateFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_header" >
+
+            <RelativeLayout
+                android:id="@+id/child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Card Rate"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Card Amount"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Agreed Rate"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Agreed Amount"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Premium"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <FrameLayout
+                                android:layout_marginRight="5dp"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/spinner_back"
+                                android:layout_height="30dp">
+
+                                <Spinner
+                                    android:id="@+id/spinner_premium"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="2dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Translation"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <FrameLayout
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/spinner_back"
+                                android:layout_height="30dp">
+
+                                <Spinner
+                                    android:id="@+id/spinner_translation"
+                                    android:singleLine="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Rate Details"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/child2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boxborder" >
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linear4"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Special Disc."
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Special Disc.(%)"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Trade Disc."
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:id="@+id/trade"
+                                android:singleLine="true"
+                                android:layout_width="175dp"
+                                android:layout_height="wrap_content" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtmob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="Discount"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/_center1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_center" >
+
+            <RelativeLayout
+                android:id="@+id/child6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight=".5"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rate Code:"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <FrameLayout
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="0dp"
+                                android:background="@drawable/spinner_back"
+                                android:layout_height="30dp">
+
+                                <Spinner
+                                    android:dropDownWidth="match_parent"
+                                    android:id="@+id/spinner_rate_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </FrameLayout>
+
+                            <Button
+                                android:layout_weight="1"
+                                android:background="@drawable/button_design"
+                                android:text="GET RATE"
+                                android:textColor="@android:color/black"
+                                android:id="@+id/getRate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:gravity="right"-->
+            <!--android:layout_below="@+id/_center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<Button-->
+                <!--android:background="@drawable/button_design"-->
+                <!--android:text="GET RATE"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:id="@+id/getRate"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</LinearLayout>-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

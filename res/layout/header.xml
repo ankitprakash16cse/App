@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/masterHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/pbrodimg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center"
+                    android:src="@drawable/icon723" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="harsh dayal sharma"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" >
+                    </TextView>
+                      <TextView
+                        android:id="@+id/emailpro"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="harsh.dayal027@gmail.com"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        android:textStyle="bold" >
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical" 
+                        android:layout_marginTop="6dp">
+                        
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="6">
+                            <TextView
+                                android:id="@+id/punreadmsg"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="3"
+                                android:textColor="#ffffff"
+                                android:text="Total Earned"
+                                android:textSize="14dp" >
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="3"
+                                android:textColor="#ffffff"
+                                android:text="Balance Due"
+                                android:textSize="14dp" >
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical" 
+                        >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="6">
+                            <TextView
+                                android:id="@+id/headerearned"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="3"
+                                android:text="15000"
+                                android:textColor="#ff8c00"
+                                android:textSize="14dp">
+                            </TextView>
+
+                            <TextView
+                                 android:id="@+id/headerbalance"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="3"
+                                android:text="456545"
+                                android:textColor="#ff8c00"
+                                android:textSize="14dp" >
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    
+               </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>

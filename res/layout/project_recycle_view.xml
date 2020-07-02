@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_margin="1dp"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="1dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:text="shailendra singh Bhadoria"
+                android:textSize="11sp"
+                />
+
+            <TextView
+                android:id="@+id/textViewShortDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:textSize="11sp"
+                android:layout_toRightOf="@id/imageView"
+                android:text="Maharana Pratap Group of Institution"
+                 />
+
+        </RelativeLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,388 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:isScrollContainer="false"
+    tools:context="com.erp.booking.DetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_header" >
+
+            <RelativeLayout
+                android:id="@+id/child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Agency"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:ems="5"
+                                android:id="@+id/_agency"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:id="@+id/hidden_agency_booking"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Client"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/auto_cltent"
+                                android:ems="5"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/hidden_Client"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Ro. No."
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Ro. Date"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="Details"
+
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+            <!-- box2- -->
+
+
+
+            <!-- box3- -->
+
+            <RelativeLayout
+                android:id="@+id/child3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/linear3"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Industry"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:ems="5"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="-10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Product"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:ems="5"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Brand"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:ems="5"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="Product"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/child5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child3" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/boxborder" >
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linear4"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Mobile No."
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Executive"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:ems="5"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Retainer"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:ems="5"
+                                android:inputType="text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="Remark"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:singleLine="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtmob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="Executive Details"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+            <!-- box4 -->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>

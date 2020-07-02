@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/rlContent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight=".9"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvName"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textColor="#ca000000"-->
+                <!--android:textSize="14sp"-->
+                <!--/>-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/tvDesignation"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:fontFamily="sans-serif"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Sr. Android Developer"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="#30000000"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textStyle="italic"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="9sp" />&ndash;&gt;-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/rlIndicator"-->
+            <!--android:layout_weight=".1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/imgArrow"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:srcCompat="@drawable/svg_arrow_right_filled" />-->
+            <!--<View-->
+                <!--android:id="@+id/viewDashed"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_margin="6dp"-->
+                <!--android:background="#b5000000" />-->
+
+            <!--&lt;!&ndash;<View&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/viewDashed"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="1dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_margin="6dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#b5000000" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+    <!--<View android:background="#000000"-->
+        <!--android:layout_width = "match_parent"-->
+        <!--android:layout_height="1px" tools:ignore="MissingConstraints"/>-->
+<!--</LinearLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/child_rv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</RelativeLayout>

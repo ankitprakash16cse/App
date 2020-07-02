@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+    dependencies {
+        //classpath 'com.google.code.ksoap2-android:ksoap2-android:3.1.1'
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    compileOptions.encoding = 'UTF-8'
+    aaptOptions {
+        cruncherEnabled = false
+        noCompress 'png'
+        useNewCruncher false
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        // instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        applicationId 'com.erp.collection'
+        versionName '1.10'
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 11
+        versionNameSuffix '1'
+        vectorDrawables.useSupportLibrary = true
+    }
+    productFlavors {
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    //implementation 'io.grpc:grpc-okhttp:1.4.0'
+    implementation('com.google.auth:google-auth-library-oauth2-http:0.7.0') {
+        exclude module: 'httpclient'
+    }
+    implementation files('libs/gson-2.2.4.jar')
+    implementation files('libs/httpmime-4.5.jar')
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation project(':simple-crop-image-libold')
+    implementation 'com.android.support:support-vector-drawable:28.0.0'
+
+
+
+
+}
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+}

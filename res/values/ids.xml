@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="moreimg" type="id"/>
+    <item name="logoid" type="id"/>
+    <item name="centerTop" type="id"></item>
+    <item name="header" type="id"></item>
+    <item name="bottom" type="id"></item>
+    <item name="btnresen" type="id"></item>
+    <item name="btnsubmit" type="id"></item>
+    <item name="rg" type="id"></item>
+    <item name="fontsize" type="id"></item>
+    <item name="speeker" type="id"></item>
+    <item name="centertopright" type="id"></item>
+</resources>

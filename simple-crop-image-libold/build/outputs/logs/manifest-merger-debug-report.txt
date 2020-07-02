@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:1-7:12
+	package
+		ADDED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:3:5-51
+		INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml
+		INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml
+		INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml
+		INJECTED from C:\Users\Admin\AndroidStudioProjects\REST\simple-crop-image-libold\AndroidManifest.xml

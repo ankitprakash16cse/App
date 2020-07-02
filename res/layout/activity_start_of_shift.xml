@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pending"
+            android:layout_width="0px"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/custom_button"
+            android:text="Pending"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/complete"
+            android:layout_width="0px"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/custom_button"
+            android:text="Complete"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Upcoming"
+            android:layout_width="0px"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_button"
+            android:text="Upcoming"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="0px"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_button"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+            <ExpandableListView android:id="@+id/mainList"
+                android:groupIndicator="@null"
+                android:background="@drawable/border_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ExpandableListView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/list_parent"
+            android:background="@drawable/border_2">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

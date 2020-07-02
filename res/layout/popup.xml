@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupMaster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#903E3C3A"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3E3C3A"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:text="Please click for Attachment."
+            android:textColor="#fff"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/btnGalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonboxbordergray"
+            android:layout_margin="2dp"
+            android:text="Galary"
+         	android:textColor="#fff"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonboxbordergray"
+            android:text="Camera"
+            android:layout_margin="2dp"
+            android:textColor="#fff"
+            android:textSize="14dp"/> 
+                             
+    </LinearLayout>
+
+</LinearLayout>

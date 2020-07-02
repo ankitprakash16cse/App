@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#000000"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/relative_1"
+        >
+        <TextView
+            android:id="@+id/textViewHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text=" Amar Ujala "
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:textAppearance="?android:textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEETING"
+            android:textColor="@android:color/black"
+            android:background="#ffb6c1"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:id="@+id/meeting"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/customer_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:text="Customer Details"
+            />
+        <TextView
+            android:id="@+id/menu_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="&#8942;"
+            android:visibility="gone"
+            android:textSize="27sp"
+            android:layout_marginRight="17dp"
+            android:textAppearance="?android:textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maharana Pratap Group of Institutions"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/subhead1"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/customer_details"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mahesh Chandra Agarhari"
+            android:id="@+id/subhead2"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/subhead1"
+            />
+        <TextView
+            android:layout_below="@id/subhead2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 9967558877"
+            android:id="@+id/subhead3"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:layout_below="@id/subhead3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agency"
+            android:id="@+id/agency"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:layout_below="@id/agency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   "
+            android:layout_marginLeft="18dp"
+            android:id="@+id/agency_sub_head"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

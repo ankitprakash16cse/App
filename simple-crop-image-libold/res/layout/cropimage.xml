@@ -1,0 +1,63 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+              
+    <view class="eu.janmuller.android.simplecropimage.CropImageView"
+            android:id="@+id/image"
+        android:visibility="visible"
+            android:background="#333333"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_x="0dip"
+            android:layout_y="25dip"
+            />
+     <LinearLayout
+          android:layout_width="fill_parent"        
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#333333"
+            android:orientation="horizontal" 
+            android:gravity="center_horizontal"         
+            android:layout_alignParentTop="true">
+                        
+           <TextView android:id="@+id/msgMarque"
+            android:ellipsize="marquee"           
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"           
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"            
+            android:text="Crop Image and press next for further processing."
+            android:textColor="#ffffff"
+            android:textSize="16dp" >                       
+           </TextView>                     
+     </LinearLayout>
+
+    <LinearLayout
+          android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+             android:weightSum="2.0">           
+        <Button android:id="@+id/discard"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                style="@style/CropButton"
+                android:text="@string/cancel"
+                android:background="#A61C92DC"
+                android:textColor="#ffffff"
+                />
+        <Button android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"             
+                style="@style/CropButton"
+                android:text="@string/save"
+                android:background="#A61C92DC"
+                android:textColor="#ffffff"
+                />
+    </LinearLayout>
+</RelativeLayout>

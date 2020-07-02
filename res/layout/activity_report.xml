@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.erp.sam.ReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative2"
+        android:background="#000000">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="Survey"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:id="@+id/survey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+        >
+        <EditText
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/st_date_edittext"
+            android:text="date"
+            android:padding="7dp"
+            android:textSize="15sp"
+            android:background="@drawable/edit_rect_style"
+            />
+        <ImageView
+            android:id="@+id/strt_cal"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/calendar_icon"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+        >
+        <EditText
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_date_edittext"
+            android:text="date"
+            android:padding="7dp"
+            android:textSize="14sp"
+            android:background="@drawable/edit_rect_style"
+            />
+        <ImageView
+            android:id="@+id/end_cal"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/calendar_icon"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="57dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/black"
+        android:text="Filter"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="#1c92dc">
+
+        <TextView
+            android:id="@+id/sec_head_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginLeft="11dp"
+            android:text="Survey Name"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/sec_head_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="177dp"
+            android:layout_toRightOf="@id/sec_head_txt1"
+            android:padding="3dp"
+            android:text="Counter"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:id="@+id/grid"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

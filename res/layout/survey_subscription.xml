@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_header" >
+
+            <RelativeLayout
+                android:id="@+id/child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/tbl1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/row0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txtformnum"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/FormNo" />
+
+                            <EditText
+                                android:id="@+id/editformno"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txtname"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/Name" />
+
+                            <EditText
+                                android:id="@+id/editname"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/row2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txtgen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Gender" />
+
+                            <Spinner
+                                android:id="@+id/spinnerGen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="@string/Details"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+            <!-- box2- -->
+
+            <RelativeLayout
+                android:id="@+id/child1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/tbl3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/row31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txtmob"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/Mobile" />
+
+                            <EditText
+                                android:id="@+id/editmob"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/row32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txtphone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Phone" />
+
+                            <EditText
+                                android:id="@+id/editphone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/row33"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txtemail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Email" />
+
+                            <EditText
+                                android:id="@+id/editemail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtmobphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="@string/mobphone"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+
+            <!-- box3- -->
+
+            <RelativeLayout
+                android:id="@+id/child3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:id="@+id/tbl4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/row41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2" >
+
+                            <LinearLayout
+                                android:id="@+id/subrow41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/txthno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/House" />
+
+                                <EditText
+                                    android:id="@+id/edithno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/subrow42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/txtstreet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Street" />
+
+                                <EditText
+                                    android:id="@+id/editstreet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!-- row2 -->
+
+                        <LinearLayout
+                            android:id="@+id/row42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2" >
+
+                            <LinearLayout
+                                android:id="@+id/subrow43"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/txtcolony"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Colony" />
+
+                                <EditText
+                                    android:id="@+id/editcolony"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/subrow44"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/txttown"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Town" />
+
+                                <Spinner
+                                    android:id="@+id/edittown"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/row43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txtpin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Pin" />
+
+                            <EditText
+                                android:id="@+id/editpin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="number" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="@string/Address"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+            <!-- box4 -->
+
+            <RelativeLayout
+                android:id="@+id/child4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child3" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/boxborder" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/btndetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Detailbtn" />
+
+                        <TextView
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/btnprofile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Profilbtn" />
+
+                        <TextView
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/btnhabit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Habitsbtn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/btnlater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Laterbtn" />
+
+                        <TextView
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/btnpayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Paymentbtn" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtreader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="@string/Reader"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

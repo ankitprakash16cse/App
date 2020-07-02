@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="Things To Do"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textSize="30dp"-->
+    <!--android:textColor="#1c92dc"/>-->
+    <GridView
+        android:id="@+id/gview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="200dp"
+        android:numColumns="auto_fit"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="left">
+
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+
+    <solid android:color="#fff" >  <!-- only for ht #70F6BC34 --> <!-- only for ht #ffe2e2 --><!-- only for gtv and eenadu "#C8E5F1" -->
+    </solid>
+    <corners
+        android:radius="1dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" >
+    </corners>  
+    <stroke android:color="#1C92DC" android:dashGap="1dp"></stroke>
+</shape>
